@@ -1,0 +1,26 @@
+{
+  "name": "openvpn-bin",
+  "version": "0.0.1",
+  "description": "Initialize a openvpn instance for mac, windows & linux",
+  "author": {
+    "name": "Luigi Poole",
+    "email": "luigipoole@outlook.com"
+  },
+  "keywords": [
+    "node openvpn",
+    "node vpn",
+    "openvpn client",
+    "openvpn",
+    "client",
+    "vpn"
+  ],
+  "repository": "none",
+  "main": "index.js",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "bluebird": "^2.9.34",
+    "get-port": "^1.0.0",
+    "lodash": "^3.10.1",
+    "runas": "^3.1.0"
+  }
+}
