@@ -1,25 +1,90 @@
-# openvpn-bin
-Initialize a openvpn instance for mac, windows &amp; linux
+openvpn-bin
+--------------
 
-Recommended https://github.com/luigiplr/node-openvpn is used as management console (designed to be chainable)
+[![npm version](https://badge.fury.io/js/openvpn-bin.svg)](http://badge.fury.io/js/openvpn-bin)
+
+Communicate to an OpenVPN client instance via telenet
+
+Installation
+------------
+
+``` 
+npm install openvpn-bin --save
+```
+
+Documentation
+-------------
+
+* [Class: OpenVPNBin](#openvpnbin)
+  * [Constructor([openvpnpath])](#openvpnbin_constructor)
+  * [Constructor([vpnOpts])](#openvpnclient_constructor)
+  * [.initialize()](#openvpnclient_initialize)
+  * [.shutdown()](#openvpnclient_shutdown)
+* [vpnclient.connect([openvpnpath],[vpnOpts])](#module_initialize)
+
+
+<a name="openvpnclient_constructor"></a>
+#### Constructor
+
+Argument: **vpnOpts** Object passed to .initialize()
 
 ```
-var openvpnbin = require('openvpn-bin');
+{
+  host: '127.0.0.1', //management console host, defualts to 127.0.0.1 
+  port: 1337, //set the port for the management console, recommended this is omited so openvpn-bin finds available port for you
+    scriptSecurity: 2,  //defualts to 2
+    config: 'config.ovpn', //path of openvpn config file, defualts to config.ovpn
+    cwd: process.cwd(), //set the current working directory for openvpn, defualts to process.cwd()
+    up: '', //optional; should be only used for mac and linux (for dns)
+    down: '' //optional; should be only used for mac and linux (for dns)
+}
+```
 
-var args = {
-        host: '127.0.0.1',
-        port: 1337,
-        scriptSecurity: 2,
-        config: 'config.ovpn',
-        cwd: process.cwd(),
-        up: '', //optional but must be used with down; should be only used for mac and linux
-        down: '' //optional but must be used with up; should be only used for mac and linux
-    };
+Argument: **openvpnpath** String passed to .initialize() with absolute or relative path to openvpn executable
+
+```
+path.normalize('../bin/openvpn.exe')
+```
+
+<a name="openvpnclient_initialize"></a>
+#### .initialize()
+
+Returns Promice on sucsessfull startup of openvpn:
+
+```
+{
+  port: spesifyed or auto found port,
+  host: spesifyed or defualt 127.0.0.1
+}
+```
+
+<a name="openvpnclient_disconnect"></a>
+#### .shutdown()
+
+It returns a Promise that is fulfilled when OpenVpn instance is terminated
 
 
-openvpnbin.initialize('path-to-open-vpn-exsecutable', args)
-  .then(function(){console.log('openvpn instance started'}))
-  .catch(function(){console.log('something went wrong! -- check the logs.'}))
-  ```
-  
-```openvpnbin.shutdown()``` coming soon.
+<a name="module_initialize"></a>
+### module.initialize([openvpnpath],[vpnOpts]) 
+
+Initialize OpenVpn Instance using **vpnOpts** argument
+
+
+
+Support
+-------
+
+If you're having any problem, please [raise an issue](https://github.com/luigiplr/openvpn-bin/issues/new) on GitHub and I'll  be happy to help.
+
+Contribute
+----------
+
+- Issue Tracker: [github.com/luigiplr/node-openvpn/issues](https://github.com/luigiplr/openvpn-binn/issues)
+- Source Code: [github.com/luigiplr/node-openvpn](https://github.com/luigiplr/openvpn-bin)
+
+
+
+License
+-------
+
+The project is licensed under the GPL-3.0 license.
