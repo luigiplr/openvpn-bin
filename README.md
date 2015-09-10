@@ -20,3 +20,5 @@ openvpnbin.initialize('path-to-open-vpn-exsecutable', args)
   .then(function(){console.log('openvpn instance started'}))
   .catch(function(){console.log('something went wrong! -- check the logs.'}))
   ```
+  
+```openvpnbin.shutdown()``` coming soon.
