@@ -32,11 +32,11 @@ Argument: **vpnOpts** Object passed to .initialize()
 {
   host: '127.0.0.1', //management console host, defualts to 127.0.0.1 
   port: 1337, //set the port for the management console, recommended this is omited so openvpn-bin finds available port for you
-    scriptSecurity: 2,  //defualts to 2
-    config: 'config.ovpn', //path of openvpn config file, defualts to config.ovpn
-    cwd: process.cwd(), //set the current working directory for openvpn, defualts to process.cwd()
-    up: '', //optional; should be only used for mac and linux (for dns)
-    down: '' //optional; should be only used for mac and linux (for dns)
+  scriptSecurity: 2,  //defualts to 2
+  config: 'config.ovpn', //path of openvpn config file, defualts to config.ovpn
+  cwd: process.cwd(), //set the current working directory for openvpn, defualts to process.cwd()
+  up: '', //optional, should be only used for mac and linux (for dns)
+  down: '' //optional, should be only used for mac and linux (for dns)
 }
 ```
 
