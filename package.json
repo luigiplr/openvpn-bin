@@ -1,6 +1,6 @@
 {
     "name": "openvpn-bin",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "description": "Initialize a openvpn instance for mac, windows & linux",
     "author": {
         "name": "Luigi Poole",

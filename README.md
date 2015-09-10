@@ -11,10 +11,9 @@ var args = {
         port: 1337,
         scriptSecurity: 2,
         config: 'config.ovpn',
-        logpath: 'log.txt',
         cwd: process.cwd(),
-        up: '',
-        down: ''
+        up: '', //optional but must be used with down; should be only used for mac and linux
+        down: '' //optional but must be used with up; should be only used for mac and linux
     };
 
 
