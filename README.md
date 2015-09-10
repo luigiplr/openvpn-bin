@@ -6,7 +6,7 @@ var openvpnbin = require('openvpn-bin');
 
 var args = {
         host: '127.0.0.1',
-        port: 1337, //port should *always* be set at this point but we will defualt it anyway to 1337 just incase.
+        port: 1337,
         scriptSecurity: 2,
         config: 'config.ovpn',
         logpath: 'log.txt',
