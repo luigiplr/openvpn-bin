@@ -16,11 +16,11 @@ Documentation
 -------------
 
 * [Class: OpenVPNBin](#openvpnbin)
-  * [Constructor([openvpnpath])](#openvpnbin_constructor)
+  * [Constructor([openvpnPath])](#openvpnbin_constructor)
   * [Constructor([vpnOpts])](#openvpnclient_constructor)
   * [.initialize()](#openvpnclient_initialize)
   * [.shutdown()](#openvpnclient_shutdown)
-* [vpnclient.connect([openvpnpath],[vpnOpts])](#module_initialize)
+* [vpnclient.connect([openvpnPath],[vpnOpts])](#module_initialize)
 
 
 <a name="openvpnclient_constructor"></a>
@@ -40,7 +40,7 @@ Argument: **vpnOpts** Object passed to .initialize()
 }
 ```
 
-Argument: **openvpnpath** String passed to .initialize() with absolute or relative path to openvpn executable
+Argument: **openvpnPath** String passed to .initialize() with absolute or relative path to openvpn executable
 
 ```
 path.normalize('../bin/openvpn.exe')
@@ -65,9 +65,9 @@ It returns a Promise that is fulfilled when OpenVpn instance is terminated
 
 
 <a name="module_initialize"></a>
-### module.initialize([openvpnpath],[vpnOpts]) 
+### module.initialize([openvpnPath],[vpnOpts]) 
 
-Initialize OpenVpn Instance using **vpnOpts** argument
+Initialize OpenVpn Instance using **openvpnPath** **vpnOpts** arguments
 
 
 
