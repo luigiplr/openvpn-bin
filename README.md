@@ -3,7 +3,7 @@ openvpn-bin
 
 [![npm version](https://badge.fury.io/js/openvpn-bin.svg)](http://badge.fury.io/js/openvpn-bin)
 
-Communicate to an OpenVPN client instance via telenet
+Initiate a Open Vpn Instance on Mac, Windows & Linux
 
 Installation
 ------------
