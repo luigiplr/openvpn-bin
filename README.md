@@ -67,7 +67,7 @@ It returns a Promise that is fulfilled when OpenVpn instance is terminated
 <a name="module_initialize"></a>
 ### module.initialize([openvpnPath],[vpnOpts]) 
 
-Initialize OpenVpn Instance using **openvpnPath** **vpnOpts** arguments
+Initialize OpenVpn Instance using **[openvpnPath]** **[vpnOpts]** arguments
 
 
 
