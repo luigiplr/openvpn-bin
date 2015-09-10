@@ -14,6 +14,9 @@
         "client",
         "vpn"
     ],
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
     "repository": {
         "type": "git",
         "url": "https://github.com/luigiplr/openvpn-bin.git"
@@ -25,5 +28,8 @@
         "get-port": "^1.0.0",
         "lodash": "^3.10.1",
         "runas": "^3.1.0"
+    },
+    "devDependencies": {
+        "minimist": "^1.2.0"
     }
 }
