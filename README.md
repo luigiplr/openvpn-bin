@@ -1,6 +1,8 @@
 # openvpn-bin
 Initialize a openvpn instance for mac, windows &amp; linux
 
+Recommended https://github.com/luigiplr/node-openvpn is used as management console (designed to be chainable)
+
 ```
 var openvpnbin = require('openvpn-bin');
 
