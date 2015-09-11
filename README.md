@@ -3,7 +3,9 @@ openvpn-bin
 
 [![npm version](https://badge.fury.io/js/openvpn-bin.svg)](http://badge.fury.io/js/openvpn-bin)
 
-Initialize a Open Vpn Instance on Mac, Windows & Linux
+Initialize a Open Vpn Instance on Mac, Windows & Linux.
+
+Designed to be used with [node-openvpn](https://www.npmjs.com/package/node-openvpn).
 
 Installation
 ------------
