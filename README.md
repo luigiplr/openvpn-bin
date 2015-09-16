@@ -81,7 +81,7 @@ If you're having any problem, please [raise an issue](https://github.com/luigipl
 Contribute
 ----------
 
-- Issue Tracker: [github.com/luigiplr/openvpn-bin/issues](https://github.com/luigiplr/openvpn-binn/issues)
+- Issue Tracker: [github.com/luigiplr/openvpn-bin/issues](https://github.com/luigiplr/openvpn-bin/issues)
 - Source Code: [github.com/luigiplr/openvpn-bin](https://github.com/luigiplr/openvpn-bin)
 
 
